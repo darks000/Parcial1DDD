@@ -28,7 +28,7 @@ namespace Parcial1DDD.RestauranteDomain
 
             throw new NotImplementedException();
         }
-        public override string VenderProducto(int cantidad, int cantidadvendida)
+        public override string VenderProducto(decimal cantidad, decimal cantidadvendida, decimal precio)
         {
             if (cantidad < cantidadvendida && cantidadvendida<=0)
             {
@@ -36,7 +36,7 @@ namespace Parcial1DDD.RestauranteDomain
             }
             else
             {
-                cantidad = cantidad - cantidadvendida;
+                cantidad = cantidad*precio - cantidadvendida*precio;
                 return "venta exitosa";
             }
 
