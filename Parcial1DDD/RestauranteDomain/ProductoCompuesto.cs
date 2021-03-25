@@ -36,6 +36,7 @@ namespace Parcial1DDD.RestauranteDomain
             }
             throw new NotImplementedException();
         }
+
         public override string VenderProducto(int cantidad, int cantidadvendida)
         {
             throw new NotImplementedException();

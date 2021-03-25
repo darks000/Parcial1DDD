@@ -29,6 +29,8 @@ namespace TestProject1
             //ASSERT //AFIRMACION //ENTONCES //THEN
             Assert.Pass("la cantidad de producto a registrar es incorrecto", resultado);
         }
+        
+
         /* 
              Dado El cliente tiene un producto simple
              nombre salchicha , costo 1000, cantidad  3
