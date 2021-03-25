@@ -30,11 +30,11 @@ namespace TestProject1
             Assert.Pass("la cantidad de producto a registrar es incorrecto", resultado);
         }
         /* 
-         Dado El cliente tiene un producto simple
-         nombre salchicha , costo 1000, cantidad  3
-         Cuando Va a registrar un valor mayor o igual a cero ///  correcto
-         Cuando Va a registrar un valor de cero /// 
-         Entonces El sistema presentará el mensaje. “la cantidad de producto a registrar es correcto
+             Dado El cliente tiene un producto simple
+             nombre salchicha , costo 1000, cantidad  3
+             Cuando Va a registrar un valor mayor o igual a cero ///  correcto
+             Cuando Va a registrar un valor de cero /// 
+             Entonces El sistema presentará el mensaje. “la cantidad de producto a registrar es correcto
         */
         [Test]
         public void puedoRegistrarunproductosimple()
@@ -66,7 +66,12 @@ namespace TestProject1
             //ASSERT //AFIRMACION //ENTONCES //THEN
             Assert.Pass("la venta del producto es correcto", resultado);
         }
+        /* Dado El cliente tiene un producto simple de costo
+        costo 1000 , cantidad 0 y cantidad vendida 3
+       Cuando Va a registrar una venta con cantidad Menor a cantidad vendida ///  incorrecto
 
+       Entonces El sistema presentará el mensaje. "la venta del producto es incorrecto"
+        */
         [Test]
         public void nopuedoRealizaventarCantindadMenorcantidadVendida()
         {

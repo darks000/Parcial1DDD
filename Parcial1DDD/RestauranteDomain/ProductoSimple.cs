@@ -7,6 +7,12 @@ namespace Parcial1DDD.RestauranteDomain
     public class ProductoSimple : producto
     {
         public ProductoSimple(string nombre,  decimal costo, int cantidad ) : base(nombre, costo, cantidad) { }
+
+        public override string RegistrarCompuesto(List<ProductoSimple> productoSimples, decimal precio)
+        {
+            throw new NotImplementedException();
+        }
+
         public override string RegistrarProducto(string nombre, decimal costo, int cantidad)
         {
             if (cantidad < 0)
@@ -15,6 +21,7 @@ namespace Parcial1DDD.RestauranteDomain
             }
             else
             {
+               
                 cantidad += cantidad;
                 return "Registro exitoso";
             }

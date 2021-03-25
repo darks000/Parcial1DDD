@@ -26,6 +26,8 @@ namespace Parcial1DDD.RestauranteDomain
 
         public abstract string RegistrarProducto(String nombre, decimal costo, int cantidad);
         public abstract string VenderProducto(int cantidad , int cantidadvendida);
+
+        public abstract string RegistrarCompuesto(List<ProductoSimple> productoSimples,decimal precio);
     }
 
 }
