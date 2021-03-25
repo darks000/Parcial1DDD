@@ -64,7 +64,7 @@ namespace TestProject1
             //ARRANGE //PREPARAR // DADO // GIVEN
             var productoSimple = new ProductoSimple("salchicha", 1000, 3);
             // ACT // ACCION // CUANDO // WHEN
-            var resultado = productoSimple.VenderProducto(4, 3);
+            var resultado = productoSimple.VenderProducto(4, 3,1000);
             //ASSERT //AFIRMACION //ENTONCES //THEN
             Assert.Pass("la venta del producto es correcto", resultado);
         }
@@ -80,7 +80,7 @@ namespace TestProject1
             //ARRANGE //PREPARAR // DADO // GIVEN
             var productoSimple = new ProductoSimple("salchicha", 1000, 3);
             // ACT // ACCION // CUANDO // WHEN
-            var resultado = productoSimple.VenderProducto(0, 3);
+            var resultado = productoSimple.VenderProducto(0, 3 , 1000);
             //ASSERT //AFIRMACION //ENTONCES //THEN
             Assert.Pass("la venta del producto es incorrecto", resultado);
         }
